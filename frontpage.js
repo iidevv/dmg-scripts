@@ -16,13 +16,14 @@
     .then((data) => {
       var products = data.data;
       products.forEach(function (product) {
-        var productDiv = document.createElement("div");
-        productDiv.className = "Product";
+        console.log(product);
+        // var productDiv = document.createElement("div");
+        // productDiv.className = "Product";
 
-        var productTitle = document.createElement("h2");
-        productTitle.className = "Product-title";
-        productTitle.textContent = product.name;
-        productDiv.appendChild(productTitle);
+        // var productTitle = document.createElement("h2");
+        // productTitle.className = "Product-title";
+        // productTitle.textContent = product.name;
+        // productDiv.appendChild(productTitle);
 
         // var productImage = document.createElement("div");
         // productImage.className = "Product-image";
@@ -37,13 +38,13 @@
         // productPrice.textContent = product.price.price;
         // productDiv.appendChild(productPrice);
 
-        var productLink = document.createElement("a");
-        productLink.href = "/products/" + product.custom_url.url;
-        productLink.className = "Product-link";
-        productLink.textContent = "Read More";
-        productDiv.appendChild(productLink);
+        // var productLink = document.createElement("a");
+        // productLink.href = "/products/" + product.custom_url.url;
+        // productLink.className = "Product-link";
+        // productLink.textContent = "Read More";
+        // productDiv.appendChild(productLink);
 
-        container.appendChild(productDiv);
+        // container.appendChild(productDiv);
       });
     })
     .catch((error) => {
