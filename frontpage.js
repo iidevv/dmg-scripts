@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if(!document.getElementById("dmg-products")) return;
   (async () => {
     const container = document.getElementById("dmg-products");
 
