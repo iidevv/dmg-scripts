@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const ymmForm = `<div id="fitment-form" class="fitment-form ng-pristine ng-invalid ng-touched">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="ymm-classification">Vehicle Classification</label>
+                            <label for="ymm-classification">Type</label>
                             <select id="ymm-classification" class="form-control ng-pristine ng-invalid ng-touched">
                                 <option selected="selected" value="null" class="ng-star-inserted">
-                                    vehicle Classifications </option>
+                                    Type </option>
                                 <option value="4" class="ng-star-inserted"> ATV/UTV </option>
                                 <option value="7" class="ng-star-inserted"> Ebike </option>
                                 <option value="2" class="ng-star-inserted"> Off-Road
