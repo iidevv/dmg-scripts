@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if(!document.getElementById("dmg-products")) return;
+  if (!document.getElementById("dmg-products")) return;
   (async () => {
     const container = document.getElementById("dmg-products");
 
@@ -89,7 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error("Error fetching products:", error);
     }
-
+  })();
+  if (!document.getElementById("ymm-search")) return;
+  (async () => {
     try {
       const ymmContainer = document.getElementById("ymm-search");
       const ymmForm = `<div id="fitment-form" class="fitment-form ng-pristine ng-invalid ng-touched">
