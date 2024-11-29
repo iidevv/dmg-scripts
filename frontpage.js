@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
           modelPrecisionLevel: "MODEL",
         };
         const response = await fetch(
-          "https://www.parts-unlimited.com/api/products/fitments/breakdowns/",
+          "https://www.parts-unlimited.com/api/products/fitments/breakdowns",
           {
             method: "POST",
             headers: {
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
           };
           const response = await fetch(
-            "https://www.parts-unlimited.com/api/products/fitments/matches/aspects/",
+            "https://www.parts-unlimited.com/api/products/fitments/matches/aspects",
             {
               method: "POST",
               headers: {
